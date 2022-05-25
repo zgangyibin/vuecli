@@ -1,36 +1,19 @@
 <template>
-    <div>
-         <h3>案例：折叠面板</h3>
-        <div>
-          <div class="title">
-            <h4>{{title}}</h4>
-            <span class="btn" @click="isShow = !isShow">
-              {{ isShow ? '收起' : '展开' }}
-            </span>
-          </div>
-          <div class="container" v-show="isShow">
-            <p>寒雨连江夜入吴, </p>
-            <p>平明送客楚山孤。</p>
-            <p>洛阳亲友如相问，</p>
-            <p>一片冰心在玉壶。</p>
-          </div>
-        </div>
-    </div>
+  <div>
+    <button>账号密码填写</button>
+    <button>个人信息填写</button>
+  </div>
 </template>
+
 <script>
-export default{
-    props:['title'],
-    data(){
-        return{
-            isShow:false
-        }
-    }
-}
+import UserName from '@/components/UserName.vue'
+import UserInfo from '@/components/UserInfo.vue'
+  export default {
+  components: { UserName, UserInfo },
+    
+  }
 </script>
+
 <style scoped>
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-}
+
 </style>
