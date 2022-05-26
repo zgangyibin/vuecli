@@ -10,14 +10,18 @@
       </keep-alive>
     
     </div>
+    <hr>
+
+    <user-table></user-table>
   </div>
 </template>
 
 <script>
 import UserName from '@/components/UserName.vue'
 import UserInfo from '@/components/UserInfo.vue'
+import UserTable from '@/components/UserTable.vue'
   export default {
-  components: { UserName, UserInfo },
+  components: { UserName, UserInfo, UserTable },
     data() {
       return {
         comname: 'UserName',//存储组件名
