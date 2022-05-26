@@ -4,6 +4,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// 全局指令
+Vue.directive("gfocus",{
+  inserted(e){
+    e.focus();
+  }
+})
 
 Vue.config.productionTip = false
 
